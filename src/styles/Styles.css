@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #280828;
+    background-color: #be95f7;
+}
+
+nav {
+    background: #9b45b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 15px 15px 30px;
+
+    background: #;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
