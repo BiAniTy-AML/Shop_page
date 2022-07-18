@@ -2,18 +2,28 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 import Navbar from "../components/Navbar";
+import { MemoryRouter } from "react-router-dom";
 
-describe("Testing navbar", () => {
+describe("Testing navbar component", () => {
     it("renders the navbar element", () => {
-        render(<Navbar />);
+        render(
+            <MemoryRouter>
+                <Navbar />
+            </MemoryRouter>
+        );
 
         const navbar = screen.getByRole("navigation");
 
         expect(navbar).toBeInTheDocument();
+        expect(navbar).toMatchSnapshot();
     });
 
     it("renders the navbar li's correctly", () => {
-        render(<Navbar />);
+        render(
+            <MemoryRouter>
+                <Navbar />
+            </MemoryRouter>
+        );
 
         const pages_links = screen.getAllByRole("listitem");
 
@@ -24,7 +34,11 @@ describe("Testing navbar", () => {
     });
 
     it("renders the logo placeholder correctly", () => {
-        render(<Navbar />);
+        render(
+            <MemoryRouter>
+                <Navbar />
+            </MemoryRouter>
+        );
 
         const logo_placeholder = screen.getByRole("heading");
 

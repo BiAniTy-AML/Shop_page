@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing navbar component renders the navbar element 1`] = `
+<nav>
+  <h1
+    class="logo"
+  >
+    Logo
+  </h1>
+  <ul>
+    <li>
+      <a
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/shop"
+      >
+        Shop
+      </a>
+    </li>
+    <li>
+      Cart
+    </li>
+  </ul>
+</nav>
+`;

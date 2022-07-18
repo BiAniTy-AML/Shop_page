@@ -10,6 +10,10 @@ body {
     background-color: #be95f7;
 }
 
+a {
+    text-decoration: none;
+}
+
 #root {
     display: flex;
     flex-flow: column nowrap;
@@ -48,6 +52,17 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     gap: 4rem;
+}
+
+nav li {
+    font-size: 2rem;
+}
+
+nav a {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: inherit;
+    color: black;
 }
 /* Navbar ends here */
 
