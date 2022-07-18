@@ -10,15 +10,27 @@ body {
     background-color: #be95f7;
 }
 
+#root {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vmin;
+
+    background: url(../images/shiny_bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Navbar starts here */
 nav {
-    background: #9b45b2;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 15px 15px 15px 30px;
 
-    background: #;
+    background: rgb(80, 69, 178, 0.7);
 }
 
 nav .logo {
@@ -37,3 +49,23 @@ nav ul {
     align-items: center;
     gap: 4rem;
 }
+/* Navbar ends here */
+
+/* Homepage starts here */
+.main_content {
+    flex: 1 1 100%;
+}
+
+.homepage {
+    /* Photo by <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explanation {
+    border: 5px solid purple;
+    padding: 4rem;
+}
+/* Homepage ends here */

@@ -17,13 +17,10 @@ describe("Testing navbar", () => {
 
         const pages_links = screen.getAllByRole("listitem");
 
-        expect(pages_links.length).toBe(2);
+        expect(pages_links.length).toBe(3);
         expect(pages_links[0].textContent).toMatch("Home");
         expect(pages_links[1].textContent).toMatch("Shop");
-
-        const logo_placeholder = screen.getByRole("heading");
-
-        expect(logo_placeholder.textContent).toMatch("Logo");
+        expect(pages_links[2].textContent).toMatch("Cart");
     });
 
     it("renders the logo placeholder correctly", () => {
