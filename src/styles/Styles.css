@@ -26,7 +26,7 @@ a {
     background-size: cover;
 }
 
-/* Navbar starts here */
+/** Navbar starts here */
 nav {
     display: flex;
     justify-content: space-between;
@@ -64,15 +64,15 @@ nav a {
     font-size: inherit;
     color: black;
 }
-/* Navbar ends here */
+/** Navbar ends here */
 
-/* Homepage starts here */
+/** Homepage starts here */
 .main_content {
     flex: 1 1 100%;
 }
 
 .homepage {
-    /* Photo by <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    /*? Photo by <a href="https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
 
     display: flex;
     justify-content: center;
@@ -83,4 +83,35 @@ nav a {
     border: 5px solid purple;
     padding: 4rem;
 }
-/* Homepage ends here */
+/** Homepage ends here */
+
+/** Shop starts here */
+.items_container {
+    background: rgb(40, 8, 40, 0.5);
+    margin: 15px 20px;
+}
+/** Shop ends here */
+
+/** Shop item starts here */
+.shop_item {
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.item_pic {
+    width: 200px;
+    height: 200px;
+}
+
+.add_to_cart {
+    cursor: pointer;
+}
+
+/** Shop item ends here */
