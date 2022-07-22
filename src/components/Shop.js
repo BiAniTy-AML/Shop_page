@@ -28,7 +28,7 @@ const Shop = () => {
 
     for (let i = 0; i < products.length; i++) {
         all_items.push(
-            <div className="shop_item" key={i}>
+            <div data-testid="product" className="shop_item" key={i}>
                 <ShopItem
                     name={products[i].name}
                     img_name={products[i].img_name}
@@ -38,7 +38,14 @@ const Shop = () => {
         );
     }
 
-    return <div className="items_container main_content">{all_items}</div>;
+    return (
+        <section
+            data-testid="main_shop_container"
+            className="items_container main_content"
+        >
+            {all_items}
+        </section>
+    );
 };
 
 export default Shop;
