@@ -64,6 +64,37 @@ nav li {
     font-size: 2rem;
 }
 
+nav .shop_cart {
+    position: relative;
+
+    cursor: pointer;
+}
+
+nav .shop_icon {
+    width: 50px;
+    height: 50px;
+}
+
+nav .cart_quantity {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid purple;
+
+    color: white;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+}
+
 nav a {
     padding: 10px 15px;
     cursor: pointer;
@@ -135,8 +166,31 @@ nav a {
     font-size: 1.2rem;
 }
 
+.item_price {
+    font-weight: bold;
+}
+
 .add_to_cart {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    border: 2px solid aquamarine;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.add_to_cart:hover {
+    background: aquamarine;
+}
+
+.add_to_cart div {
+    border: none;
+    background: none;
+    border-radius: 15px;
+    font-weight: bold;
 }
 
 /** Shop item ends here */

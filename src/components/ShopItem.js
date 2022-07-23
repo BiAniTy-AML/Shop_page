@@ -1,5 +1,7 @@
+import add_shop_icon from "../images/plus_circle.svg";
+
 const ShopItem = (props) => {
-    const { name, img_name, description } = props;
+    const { price, name, img_name, description } = props;
 
     return (
         <>
@@ -9,7 +11,11 @@ const ShopItem = (props) => {
                 className="item_pic"
             />
             <div className="item_name">{name}</div>
-            <button className="add_to_cart">Add to cart</button>
+            <div className="item_price">{price}</div>
+            <div className="add_to_cart">
+                <img src={add_shop_icon} alt="" />
+                <div>Add to cart</div>
+            </div>
         </>
     );
 };

@@ -1,27 +1,27 @@
 import ShopItem from "./ShopItem";
 
 const Shop = () => {
-    const Item = (name, img_name, description) => {
+    const Item = (name, img_name, price) => {
         return {
             name,
             img_name,
-            description,
+            price,
         };
     };
 
     const products = [
-        Item("Alexandrite", "Alexandrite.png", "Very cool"),
-        Item("Luz Opal", "Luz Opal.jpg", "Very cool too"),
-        Item("Rose Quartz Geode", "Rose Quartz Geode.jpg", "Very cool as well"),
-        Item("Sapphire", "Sapphire.png", "Very cool too"),
-        Item("Sunset Fire-Opal", "Sunset Fire Opal.jpg", "Very cool"),
-        Item("Tanzanite", "Tanzanite.jpg", "Very cool"),
-        Item("Red Beryl", "Red Beryl.png", "Very cool"),
-        Item("Pink Diamond", "Pink Diamond.png", "Very cool"),
-        Item("Fluorite", "Fluorite.png", "Very cool"),
-        Item("Amethyst", "Amethyst.png", "Very cool"),
-        Item("Aquamarine", "Aquamarine.png", "Very cool"),
-        Item("Pink Sapphire", "Pink Sapphire.png", "Very cool"),
+        Item("Alexandrite", "Alexandrite.png", "10000 & / unit"),
+        Item("Luz Opal", "Luz Opal.jpg", "2000 & / unit"),
+        Item("Rose Quartz Geode", "Rose Quartz Geode.jpg", "1000 & / unit"),
+        Item("Sapphire", "Sapphire.png", "9000 & / unit"),
+        Item("Sunset Fire-Opal", "Sunset Fire Opal.jpg", "5000 & / unit"),
+        Item("Tanzanite", "Tanzanite.jpg", "4000 & / unit"),
+        Item("Red Beryl", "Red Beryl.png", "6000 & / unit"),
+        Item("Pink Diamond", "Pink Diamond.png", "7000 & / unit"),
+        Item("Fluorite", "Fluorite.png", "3000 & / unit"),
+        Item("Amethyst", "Amethyst.png", "8000 & / unit"),
+        Item("Aquamarine", "Aquamarine.png", "11000 & / unit"),
+        Item("Pink Sapphire", "Pink Sapphire.png", "12000 & / unit"),
     ];
 
     const all_items = [];
@@ -32,7 +32,7 @@ const Shop = () => {
                 <ShopItem
                     name={products[i].name}
                     img_name={products[i].img_name}
-                    description={products[i].description}
+                    price={products[i].price}
                 />
             </div>
         );
