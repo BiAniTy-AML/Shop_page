@@ -180,6 +180,8 @@ nav a {
     border: 2px solid aquamarine;
     border-radius: 15px;
     padding: 10px 15px;
+
+    user-select: none;
 }
 
 .add_to_cart:hover {

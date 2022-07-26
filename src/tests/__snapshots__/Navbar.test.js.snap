@@ -22,8 +22,19 @@ exports[`Testing navbar component renders the navbar element 1`] = `
         Shop
       </a>
     </li>
-    <li>
-      Cart
+    <li
+      class="shop_cart"
+    >
+      <img
+        alt=""
+        class="shop_icon"
+        src="shopping_bag.svg"
+      />
+      <div
+        class="cart_quantity"
+      >
+        2
+      </div>
     </li>
   </ul>
 </nav>

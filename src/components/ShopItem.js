@@ -1,7 +1,7 @@
 import add_shop_icon from "../images/plus_circle.svg";
 
 const ShopItem = (props) => {
-    const { price, name, img_name, description } = props;
+    const { price, name, img_name, add_to_cart } = props;
 
     return (
         <>
@@ -11,8 +11,8 @@ const ShopItem = (props) => {
                 className="item_pic"
             />
             <div className="item_name">{name}</div>
-            <div className="item_price">{price}</div>
-            <div className="add_to_cart">
+            <div className="item_price">{price} / unit</div>
+            <div className="add_to_cart" onClick={add_to_cart}>
                 <img src={add_shop_icon} alt="" />
                 <div>Add to cart</div>
             </div>

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import shop_icon from "../images/shopping_bag.svg";
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const { cart_products } = props;
     return (
         <nav>
             <h1 className="logo">Logo</h1>
@@ -15,7 +16,7 @@ const Navbar = () => {
                 </li>
                 <li className="shop_cart">
                     <img className="shop_icon" src={shop_icon} alt="" />
-                    <div className="cart_quantity"></div>
+                    <div className="cart_quantity">{cart_products.length}</div>
                 </li>
             </ul>
         </nav>
