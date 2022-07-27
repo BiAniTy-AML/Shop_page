@@ -5,16 +5,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
-import { useState } from "react";
+import Cart from "./components/Cart";
+import { useEffect, useState } from "react";
 
 const App = () => {
     const [cart_products, set_cart_products] = useState([]);
+    const [is_open, set_is_open] = useState(false);
 
     const Item = (name, img_name, price) => {
         return {
             name,
             img_name,
             price,
+            quantity: 0,
         };
     };
 
@@ -43,6 +46,10 @@ const App = () => {
             ({ name }) => name === prod_name
         );
 
+        selected_product.quantity === 0
+            ? (selected_product.quantity = 1)
+            : (e = e);
+
         const prod_in_array = cart_products.some(
             ({ name }) => name === prod_name
         );
@@ -51,10 +58,43 @@ const App = () => {
             set_cart_products((prev_prod) => [...prev_prod, selected_product]);
     };
 
+    const change_purchase_amount = (operation, product) => {
+        const prod = cart_products.find(({ name }) => name === product.name);
+
+        switch (operation) {
+            case "more":
+                product["quantity"] += 1;
+
+                // ? should this be done with useEffect ?
+                set_cart_products((prev_list) => [...prev_list]);
+                break;
+
+            case "less":
+                if (product["quantity"] > 1) product["quantity"] -= 1;
+                else product["quantity"] = 1;
+
+                set_cart_products((prev_list) => [...prev_list]);
+                break;
+
+            default:
+                return;
+        }
+    };
+
     return (
         <>
             <BrowserRouter>
-                <Navbar cart_products={cart_products} />
+                <Navbar
+                    cart_products={cart_products}
+                    manage_modal={() =>
+                        set_is_open((prev_state) => !prev_state)
+                    }
+                />
+                <Cart
+                    is_open={is_open}
+                    cart_products={cart_products}
+                    change_purchase_amount={change_purchase_amount}
+                />
 
                 <Routes>
                     <Route path="/" element={<Homepage />} />

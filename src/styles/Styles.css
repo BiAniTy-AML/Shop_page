@@ -140,6 +140,7 @@ nav a {
     box-shadow: 3px 3px 1px #111;
     border-radius: 1rem;
     background: rgb(128, 0, 128, 0.3);
+    font-weight: bold;
 
     padding: 1rem;
 
@@ -162,12 +163,7 @@ nav a {
 }
 
 .item_name {
-    font-weight: bold;
     font-size: 1.2rem;
-}
-
-.item_price {
-    font-weight: bold;
 }
 
 .add_to_cart {
@@ -180,7 +176,6 @@ nav a {
     border: 2px solid aquamarine;
     border-radius: 15px;
     padding: 10px 15px;
-
     user-select: none;
 }
 
@@ -196,3 +191,114 @@ nav a {
 }
 
 /** Shop item ends here */
+
+/** Cart starts here */
+.cart_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 0%;
+    opacity: 0;
+    padding: 0;
+
+    z-index: 100;
+
+    transition: width 700ms ease-in-out, opacity 750ms ease-in-out,
+        padding 500ms ease-in-out;
+
+    background: rgb(119, 119, 119);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+}
+
+.cart_modal.active {
+    width: 35%;
+    opacity: 1;
+    padding: 0.5rem;
+}
+
+.cart_products {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.cart_item {
+    border: 3px solid violet;
+    box-shadow: 3px 3px 1px #111;
+    border-radius: 1rem;
+    background: rgb(128, 0, 128, 0.3);
+    font-weight: bold;
+
+    padding: 1rem;
+
+    /* width: 200px;
+    height: 200px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.cart_item .item_pic {
+    width: 300px;
+    height: 300px;
+}
+
+.cart_item .item_quantity {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 15px;
+    background: royalblue;
+    padding: 10px;
+}
+
+.cart_item .change_amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart_item .item_quantity * {
+    font-size: 2rem;
+}
+
+.number_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buy_more,
+.buy_less {
+    cursor: pointer;
+    width: 2rem;
+}
+
+.overlay {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgb(0, 0, 0, 0.5);
+}
+
+/** Cart ends here */
