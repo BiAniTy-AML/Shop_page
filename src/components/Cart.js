@@ -6,6 +6,8 @@ const Cart = (props) => {
     const { is_open, cart_products, remove_from_cart, change_purchase_amount } =
         props;
 
+    let total_price = 0;
+
     return (
         <>
             <div className={`overlay ${is_open ? "active" : ""}`}></div>
@@ -20,70 +22,80 @@ const Cart = (props) => {
                     </div>
                 ) : (
                     <div className="cart_products">
-                        {cart_products.map((prod, i) => (
-                            <div className="cart_item" key={i}>
-                                <button
-                                    className="remove_product"
-                                    onClick={() => remove_from_cart(prod.name)}
-                                >
-                                    &times;
-                                </button>
-                                <div className="item_name">{prod.name}</div>
+                        {cart_products.map((prod, i) => {
+                            total_price +=
+                                Number(prod.price.slice(0, -1)) * prod.quantity;
 
-                                <img
-                                    src={require(`../images/gemstones/${prod.img_name}`)}
-                                    alt="gemstone"
-                                    className="item_pic"
-                                />
+                            return (
+                                <div className="cart_item" key={i}>
+                                    <button
+                                        className="remove_product"
+                                        onClick={() =>
+                                            remove_from_cart(prod.name)
+                                        }
+                                    >
+                                        &times;
+                                    </button>
+                                    <div className="item_name">{prod.name}</div>
 
-                                <div className="price_info">
-                                    <div className="item_quantity">
-                                        <div>Quantity: </div>
-                                        <div className="change_amount">
-                                            <img
-                                                src={minus_circle}
-                                                alt="minus circle"
-                                                className="buy_less"
-                                                onClick={() =>
-                                                    change_purchase_amount(
-                                                        "less",
-                                                        prod
-                                                    )
-                                                }
-                                            />
-                                            <div
-                                                className="selected_number"
-                                                data-testid="prod_amount"
-                                            >
-                                                {prod.quantity}
-                                            </div>
-                                            <div className="number_items">
+                                    <img
+                                        src={require(`../images/gemstones/${prod.img_name}`)}
+                                        alt="gemstone"
+                                        className="item_pic"
+                                    />
+
+                                    <div className="price_info">
+                                        <div className="item_quantity">
+                                            <div>Quantity: </div>
+                                            <div className="change_amount">
                                                 <img
-                                                    src={plus_circle}
-                                                    className="buy_more"
-                                                    alt="plus circle"
+                                                    src={minus_circle}
+                                                    alt="minus circle"
+                                                    className="buy_less"
                                                     onClick={() =>
                                                         change_purchase_amount(
-                                                            "more",
+                                                            "less",
                                                             prod
                                                         )
                                                     }
                                                 />
+                                                <div
+                                                    className="selected_number"
+                                                    data-testid="prod_amount"
+                                                >
+                                                    {prod.quantity}
+                                                </div>
+                                                <div className="number_items">
+                                                    <img
+                                                        src={plus_circle}
+                                                        className="buy_more"
+                                                        alt="plus circle"
+                                                        onClick={() =>
+                                                            change_purchase_amount(
+                                                                "more",
+                                                                prod
+                                                            )
+                                                        }
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="item_price">
-                                        {prod.price} / unit
-                                    </div>
-                                    <div className="item_accumulated_price">
-                                        Price:{" "}
-                                        {Number(prod.price.slice(0, -1)) *
-                                            prod.quantity}{" "}
-                                        &
+                                        <div className="item_price">
+                                            {prod.price} / unit
+                                        </div>
+                                        <div className="item_accumulated_price">
+                                            Price:{" "}
+                                            {Number(prod.price.slice(0, -1)) *
+                                                prod.quantity}{" "}
+                                            &
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
+                        <div className="total_price">
+                            Total price: {total_price}
+                        </div>
                     </div>
                 )}
             </div>
