@@ -6,7 +6,7 @@ import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const App = () => {
     const [cart_products, set_cart_products] = useState([]);
@@ -46,9 +46,7 @@ const App = () => {
             ({ name }) => name === prod_name
         );
 
-        selected_product.quantity === 0
-            ? (selected_product.quantity = 1)
-            : (e = e);
+        if (selected_product.quantity === 0) selected_product.quantity = 1;
 
         const prod_in_array = cart_products.some(
             ({ name }) => name === prod_name
@@ -58,9 +56,19 @@ const App = () => {
             set_cart_products((prev_prod) => [...prev_prod, selected_product]);
     };
 
-    const change_purchase_amount = (operation, product) => {
-        const prod = cart_products.find(({ name }) => name === product.name);
+    const remove_from_cart = (prod_name) => {
+        const prod = cart_products.find(({ name }) => name === prod_name);
+        prod["quantity"] = 0;
 
+        const idx = cart_products.findIndex((prod) => prod.name === prod_name);
+
+        const without_removed = [...cart_products];
+        without_removed.splice(idx, 1);
+
+        set_cart_products([...without_removed]);
+    };
+
+    const change_purchase_amount = (operation, product) => {
         switch (operation) {
             case "more":
                 product["quantity"] += 1;
@@ -94,6 +102,7 @@ const App = () => {
                     is_open={is_open}
                     cart_products={cart_products}
                     change_purchase_amount={change_purchase_amount}
+                    remove_from_cart={remove_from_cart}
                 />
 
                 <Routes>

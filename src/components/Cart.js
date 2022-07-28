@@ -3,7 +3,8 @@ import plus_circle from "../images/plus_circle.svg";
 import minus_circle from "../images/minus_circle.svg";
 
 const Cart = (props) => {
-    const { is_open, cart_products, change_purchase_amount } = props;
+    const { is_open, cart_products, remove_from_cart, change_purchase_amount } =
+        props;
 
     return (
         <>
@@ -21,6 +22,12 @@ const Cart = (props) => {
                     <div className="cart_products">
                         {cart_products.map((prod, i) => (
                             <div className="cart_item" key={i}>
+                                <button
+                                    className="remove_product"
+                                    onClick={() => remove_from_cart(prod.name)}
+                                >
+                                    &times;
+                                </button>
                                 <div className="item_name">{prod.name}</div>
 
                                 <img

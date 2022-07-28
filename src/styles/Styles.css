@@ -238,6 +238,17 @@ nav a {
     padding: 0.5rem;
 }
 
+.remove_product {
+    border: none;
+    background: none;
+    font-size: 3rem;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
 .cart_products {
     display: flex;
     align-items: center;
@@ -261,6 +272,8 @@ nav a {
     align-items: center;
     flex-flow: column nowrap;
     gap: 1rem;
+
+    position: relative;
 }
 
 .cart_item .item_pic {
