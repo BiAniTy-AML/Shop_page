@@ -118,7 +118,10 @@ nav a {
 
 .explanation {
     border: 5px solid purple;
+    border-radius: 15px;
     padding: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 /** Homepage ends here */
 
@@ -193,6 +196,22 @@ nav a {
 /** Shop item ends here */
 
 /** Cart starts here */
+.empty_cart {
+    position: absolute;
+    border: 3px solid rgb(176, 0, 181);
+    box-shadow: 0px 0px 20px #be95f7;
+    background: lightsteelblue;
+    border-radius: 15px;
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30vw;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .cart_modal {
     position: fixed;
     top: 0;
@@ -209,10 +228,6 @@ nav a {
         padding 500ms ease-in-out;
 
     background: rgb(119, 119, 119);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     overflow: auto;
 }
@@ -239,8 +254,7 @@ nav a {
 
     padding: 1rem;
 
-    /* width: 200px;
-    height: 200px; */
+    width: 30vw;
 
     display: flex;
     justify-content: center;
@@ -250,8 +264,8 @@ nav a {
 }
 
 .cart_item .item_pic {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 .cart_item .item_quantity {
@@ -264,6 +278,16 @@ nav a {
     border-radius: 15px;
     background: royalblue;
     padding: 10px;
+}
+
+.price_info {
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
 }
 
 .cart_item .change_amount {
@@ -290,6 +314,14 @@ nav a {
     width: 2rem;
 }
 
+.item_accumulated_price {
+    border-radius: 15px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background: lightgreen;
+}
+
 .overlay {
     position: fixed;
 
@@ -298,7 +330,18 @@ nav a {
     bottom: 0;
     left: 0;
 
+    height: 0;
+
+    pointer-events: none;
+
     background: rgb(0, 0, 0, 0.5);
+
+    transition: height 700ms ease-out;
+    z-index: 50;
+}
+
+.overlay.active {
+    height: 100vh;
 }
 
 /** Cart ends here */

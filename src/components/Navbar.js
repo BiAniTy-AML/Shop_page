@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+// * https://feathericons.com/
 import shop_icon from "../images/shopping_bag.svg";
 
 const Navbar = (props) => {

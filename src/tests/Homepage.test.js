@@ -8,7 +8,7 @@ describe("Testing Homepage component", () => {
         render(<Homepage />);
 
         const explanation_txt_div = screen.getByText(
-            "This will be a gemstone shop, cause i like 'em"
+            "This is a gemstone shop, cause i like 'em"
         );
 
         expect(explanation_txt_div).toBeInTheDocument();
