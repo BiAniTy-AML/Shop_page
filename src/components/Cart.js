@@ -3,9 +3,11 @@ import plus_circle from "../images/plus_circle.svg";
 import minus_circle from "../images/minus_circle.svg";
 
 const Cart = (props) => {
+    // Whether the cart is visible or not, the products in the cart and related functions
     const { is_open, cart_products, remove_from_cart, change_purchase_amount } =
         props;
 
+    // What will be charged at the purchase
     let total_price = 0;
 
     return (
@@ -15,6 +17,7 @@ const Cart = (props) => {
                 className={`cart_modal ${is_open ? "active" : ""}`}
                 data-testid="cart_modal"
             >
+                {/* Renders differently depending on whether the cart is empty or not */}
                 {cart_products.length === 0 ? (
                     <div className="empty_cart">
                         It seems like you haven't selected anything yet. Choose

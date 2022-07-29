@@ -1,8 +1,12 @@
 import ShopItem from "./ShopItem";
 
+// Main page of the shop
 const Shop = (props) => {
+    // Funtions to handle selecting a product
+    // and all the products available to buy
     const { add_to_cart, products } = props;
 
+    // Array of DOM cards of each product
     const all_items = [];
 
     for (let i = 0; i < products.length; i++) {

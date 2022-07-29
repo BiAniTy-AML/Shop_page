@@ -1,6 +1,9 @@
 import add_shop_icon from "../images/plus_circle.svg";
 
+// Each item in display
 const ShopItem = (props) => {
+    // The info of the item and the funtion to handle being selected
+    // TODO: just receive the whole item obj instead of each part individually
     const { price, name, img_name, add_to_cart } = props;
 
     return (

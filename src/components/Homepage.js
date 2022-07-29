@@ -1,3 +1,4 @@
+// Front page of the shop
 const Homepage = () => {
     return (
         <section className="main_content homepage">

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import shop_icon from "../images/shopping_bag.svg";
 
 const Navbar = (props) => {
+    // The products selected to be bought
+    // and function to handle opening and closing the cart modal
     const { cart_products, manage_modal } = props;
 
     return (
