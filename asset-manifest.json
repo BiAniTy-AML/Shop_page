@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b2640ea4.css",
+    "main.js": "/static/js/main.5648dfc7.js",
+    "static/media/shiny_bg.jpg": "/static/media/shiny_bg.2b2a593fcdc1de01bed9.jpg",
+    "static/media/Fluorite.png": "/static/media/Fluorite.5d2763d37a2793dd610d.png",
+    "static/media/Aquamarine.png": "/static/media/Aquamarine.51cfe99b26c5dbce7168.png",
+    "static/media/Pink Diamond.png": "/static/media/Pink Diamond.50a1afb4d2692625046e.png",
+    "static/media/Amethyst.png": "/static/media/Amethyst.fae501d4910ff8ec7f8e.png",
+    "static/media/Pink Sapphire.png": "/static/media/Pink Sapphire.0a8a6d00861ac41d5bda.png",
+    "static/media/Red Beryl.png": "/static/media/Red Beryl.2196679156b6a44a86be.png",
+    "static/media/Alexandrite.png": "/static/media/Alexandrite.a8e0aec0543085352d40.png",
+    "static/media/Sapphire.png": "/static/media/Sapphire.917632c2f2dfb0a67274.png",
+    "static/media/Sunset Fire Opal.jpg": "/static/media/Sunset Fire Opal.752b1eb825d5bcc815b5.jpg",
+    "static/media/Luz Opal.jpg": "/static/media/Luz Opal.af06ff10fff992dbdbbc.jpg",
+    "static/media/Tanzanite.jpg": "/static/media/Tanzanite.ef82f962e886f810d03a.jpg",
+    "static/media/Rose Quartz Geode.jpg": "/static/media/Rose Quartz Geode.65bd94ba09deee94d89f.jpg",
+    "index.html": "/index.html",
+    "static/media/shopping_bag.svg": "/static/media/shopping_bag.1d26564602e1b9bb7b8e1a9beecb2ae0.svg",
+    "static/media/plus_circle.svg": "/static/media/plus_circle.6ccef3018bcc6d53d56e94a66618a0c0.svg",
+    "static/media/minus_circle.svg": "/static/media/minus_circle.e04118c7e5f1ff662691ab3cc9d2dd1d.svg",
+    "main.b2640ea4.css.map": "/static/css/main.b2640ea4.css.map",
+    "main.5648dfc7.js.map": "/static/js/main.5648dfc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2640ea4.css",
+    "static/js/main.5648dfc7.js"
+  ]
+}
