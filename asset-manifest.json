@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shop_page/static/css/main.a2849495.css",
-    "main.js": "/Shop_page/static/js/main.f435a414.js",
+    "main.js": "/Shop_page/static/js/main.d2cdf2a9.js",
     "static/media/shiny_bg.jpg": "/Shop_page/static/media/shiny_bg.2b2a593fcdc1de01bed9.jpg",
     "static/media/Fluorite.png": "/Shop_page/static/media/Fluorite.5d2763d37a2793dd610d.png",
     "static/media/Aquamarine.png": "/Shop_page/static/media/Aquamarine.51cfe99b26c5dbce7168.png",
@@ -20,10 +20,10 @@
     "static/media/plus_circle.svg": "/Shop_page/static/media/plus_circle.6ccef3018bcc6d53d56e94a66618a0c0.svg",
     "static/media/minus_circle.svg": "/Shop_page/static/media/minus_circle.e04118c7e5f1ff662691ab3cc9d2dd1d.svg",
     "main.a2849495.css.map": "/Shop_page/static/css/main.a2849495.css.map",
-    "main.f435a414.js.map": "/Shop_page/static/js/main.f435a414.js.map"
+    "main.d2cdf2a9.js.map": "/Shop_page/static/js/main.d2cdf2a9.js.map"
   },
   "entrypoints": [
     "static/css/main.a2849495.css",
-    "static/js/main.f435a414.js"
+    "static/js/main.d2cdf2a9.js"
   ]
 }
