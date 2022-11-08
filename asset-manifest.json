@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/BiAniTy-AML/Shop_page/static/css/main.be4292e7.css",
-    "main.js": "/BiAniTy-AML/Shop_page/static/js/main.6feeac00.js",
-    "static/media/shiny_bg.jpg": "/BiAniTy-AML/Shop_page/static/media/shiny_bg.2b2a593fcdc1de01bed9.jpg",
-    "static/media/Fluorite.png": "/BiAniTy-AML/Shop_page/static/media/Fluorite.5d2763d37a2793dd610d.png",
-    "static/media/Aquamarine.png": "/BiAniTy-AML/Shop_page/static/media/Aquamarine.51cfe99b26c5dbce7168.png",
-    "static/media/Pink Diamond.png": "/BiAniTy-AML/Shop_page/static/media/Pink Diamond.50a1afb4d2692625046e.png",
-    "static/media/Amethyst.png": "/BiAniTy-AML/Shop_page/static/media/Amethyst.fae501d4910ff8ec7f8e.png",
-    "static/media/Pink Sapphire.png": "/BiAniTy-AML/Shop_page/static/media/Pink Sapphire.0a8a6d00861ac41d5bda.png",
-    "static/media/Red Beryl.png": "/BiAniTy-AML/Shop_page/static/media/Red Beryl.2196679156b6a44a86be.png",
-    "static/media/Alexandrite.png": "/BiAniTy-AML/Shop_page/static/media/Alexandrite.a8e0aec0543085352d40.png",
-    "static/media/Sapphire.png": "/BiAniTy-AML/Shop_page/static/media/Sapphire.917632c2f2dfb0a67274.png",
-    "static/media/Sunset Fire Opal.jpg": "/BiAniTy-AML/Shop_page/static/media/Sunset Fire Opal.752b1eb825d5bcc815b5.jpg",
-    "static/media/Luz Opal.jpg": "/BiAniTy-AML/Shop_page/static/media/Luz Opal.af06ff10fff992dbdbbc.jpg",
-    "static/media/Tanzanite.jpg": "/BiAniTy-AML/Shop_page/static/media/Tanzanite.ef82f962e886f810d03a.jpg",
-    "static/media/Rose Quartz Geode.jpg": "/BiAniTy-AML/Shop_page/static/media/Rose Quartz Geode.65bd94ba09deee94d89f.jpg",
-    "index.html": "/BiAniTy-AML/Shop_page/index.html",
-    "static/media/shopping_bag.svg": "/BiAniTy-AML/Shop_page/static/media/shopping_bag.1d26564602e1b9bb7b8e1a9beecb2ae0.svg",
-    "static/media/plus_circle.svg": "/BiAniTy-AML/Shop_page/static/media/plus_circle.6ccef3018bcc6d53d56e94a66618a0c0.svg",
-    "static/media/minus_circle.svg": "/BiAniTy-AML/Shop_page/static/media/minus_circle.e04118c7e5f1ff662691ab3cc9d2dd1d.svg",
-    "main.be4292e7.css.map": "/BiAniTy-AML/Shop_page/static/css/main.be4292e7.css.map",
-    "main.6feeac00.js.map": "/BiAniTy-AML/Shop_page/static/js/main.6feeac00.js.map"
+    "main.css": "/Shop_page/static/css/main.a2849495.css",
+    "main.js": "/Shop_page/static/js/main.f435a414.js",
+    "static/media/shiny_bg.jpg": "/Shop_page/static/media/shiny_bg.2b2a593fcdc1de01bed9.jpg",
+    "static/media/Fluorite.png": "/Shop_page/static/media/Fluorite.5d2763d37a2793dd610d.png",
+    "static/media/Aquamarine.png": "/Shop_page/static/media/Aquamarine.51cfe99b26c5dbce7168.png",
+    "static/media/Pink Diamond.png": "/Shop_page/static/media/Pink Diamond.50a1afb4d2692625046e.png",
+    "static/media/Amethyst.png": "/Shop_page/static/media/Amethyst.fae501d4910ff8ec7f8e.png",
+    "static/media/Pink Sapphire.png": "/Shop_page/static/media/Pink Sapphire.0a8a6d00861ac41d5bda.png",
+    "static/media/Red Beryl.png": "/Shop_page/static/media/Red Beryl.2196679156b6a44a86be.png",
+    "static/media/Alexandrite.png": "/Shop_page/static/media/Alexandrite.a8e0aec0543085352d40.png",
+    "static/media/Sapphire.png": "/Shop_page/static/media/Sapphire.917632c2f2dfb0a67274.png",
+    "static/media/Sunset Fire Opal.jpg": "/Shop_page/static/media/Sunset Fire Opal.752b1eb825d5bcc815b5.jpg",
+    "static/media/Luz Opal.jpg": "/Shop_page/static/media/Luz Opal.af06ff10fff992dbdbbc.jpg",
+    "static/media/Tanzanite.jpg": "/Shop_page/static/media/Tanzanite.ef82f962e886f810d03a.jpg",
+    "static/media/Rose Quartz Geode.jpg": "/Shop_page/static/media/Rose Quartz Geode.65bd94ba09deee94d89f.jpg",
+    "index.html": "/Shop_page/index.html",
+    "static/media/shopping_bag.svg": "/Shop_page/static/media/shopping_bag.1d26564602e1b9bb7b8e1a9beecb2ae0.svg",
+    "static/media/plus_circle.svg": "/Shop_page/static/media/plus_circle.6ccef3018bcc6d53d56e94a66618a0c0.svg",
+    "static/media/minus_circle.svg": "/Shop_page/static/media/minus_circle.e04118c7e5f1ff662691ab3cc9d2dd1d.svg",
+    "main.a2849495.css.map": "/Shop_page/static/css/main.a2849495.css.map",
+    "main.f435a414.js.map": "/Shop_page/static/js/main.f435a414.js.map"
   },
   "entrypoints": [
-    "static/css/main.be4292e7.css",
-    "static/js/main.6feeac00.js"
+    "static/css/main.a2849495.css",
+    "static/js/main.f435a414.js"
   ]
 }
